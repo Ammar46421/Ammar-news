@@ -1,30 +1,33 @@
-*{
+* {
     font-family: serif;
 }
 
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
 }
 
 /* navbar */
 
 #navbar {
-    background: rgb(231, 230, 230);
+    background: rgb(0, 0, 0);
     font-family: sans-serif;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: black;
-    /* border-radius: 20px; */
+    border-radius: 20px, solid;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     position: sticky;
-    top: 0;
+    top: 1px;
+    opacity: 90%;
 }
 
 /* navbar image */
 img {
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 
 
@@ -32,19 +35,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
 
-/* Typed logo in navbar */
-
-.logo a {
-    text-decoration: none;
-    font-size: x-large;
-    text-align: center;
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    color: white;
+.navdiv .list {
+    display: flex;
 }
+
 
 /* menubar in navbar */
 
@@ -62,13 +60,13 @@ li a {
     text-decoration: none;
     text-shadow: 0 0 3px #000000;
     position: relative;
-    
+
 }
 
-li a:hover{
-    background-color: rgb(255, 255, 255);
+li a:hover {
+    background-color: rgb(0, 0, 0);
     /* text-transform: uppercase; */
-    
+
 }
 
 /* Dropdown Button */
@@ -83,46 +81,52 @@ li a:hover{
     text-shadow: 0 0 3px #000000;
     position: relative;
     border: none;
-    background-color: rgb(231, 230, 230);;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+    background-color: rgb(0, 0, 0);
+    ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #989797;
     min-width: 160px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     /* color: black; */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #9a9a9a;}
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #9a9a9a;
+}
 
 
 
 /* paragraph article */
 #front {
 
-margin-left: 5%;
+    padding-left: 5%;
     padding-right: 5%;
-    /* padding-left: 25%; */
+
+
 
 }
 
@@ -131,24 +135,24 @@ margin-left: 5%;
     /* text-align: center; */
     padding-left: 12px;
     padding-right: 12px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-h2{
+h2 {
     font-size: 250%;
 }
 
-p{
-    font-size:150%;
+p {
+    font-size: 150%;
 }
 
 /* new page news link */
-#down-menu{
-background-color: white;
-display: flex;
-padding-left: 30px;
+#down-menu {
+    background-color: white;
+    display: flex;
+    padding-left: 30px;
     padding-right: 30px;
-
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 #down-menu div {
@@ -158,33 +162,37 @@ padding-left: 30px;
     /* text-align: center; */
     padding-left: 12px;
     padding-right: 12px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    
-    
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* border: black,12px;
+     border-style: solid; */
+    width: 250px;
+    background-color: rgb(0, 200, 255);
+
 }
 
 
 
-#down-menu div img{
+#down-menu div img {
     border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 80%;
-  height: auto;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-.news-bar{
+.news-bar {
     font-size: 30px;
     color: black;
     text-decoration: none;
 }
+
 /* wo box jahan copyright aur trademark lagaya jata ha */
-.down{
-    
+.down {
+
     background-color: black;
 }
 
@@ -193,4 +201,3 @@ padding-left: 30px;
     font-size: 200%;
     text-align: center;
 }
-
